@@ -33,7 +33,13 @@ for tweet in public_tweets:
     #print(analysis.sentiment)
     tweets.append(tweet.text)
     if analysis.sentiment.polarity>0.5:
+        
         opinions.append('pos')
     else:
         opinions.append('neg')
+        
+if opinions.count("pos")> opinions.count("neg"):  
+    print("the tweet is overall positive")
+else:
+    print("the tweet is overall negative")
         
