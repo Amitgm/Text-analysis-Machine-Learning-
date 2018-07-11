@@ -37,22 +37,3 @@ for tweet in public_tweets:
     else:
         opinions.append('neg')
         
-
-csvfile = open('test.csv', 'wb')
-csvwriter = csv.writer(csvfile)
-for opi in opinions:
-    csvwriter.writerow(opi)
-#csvfile.close()
-
-
-#opinions= open("opinions.csv",'w')
-
-
-#for opi in opinions:
- #   opinions=open('opinions','a')
-  #  opinions.write(opi)
-   # opinions.write('\n')
-    #opinions.close()
-
-    
-
